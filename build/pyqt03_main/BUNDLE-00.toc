@@ -1,0 +1,3 @@
+([('pyqt03_main',
+   '/Users/woojin/Desktop/test/imageSolution/dist/pyqt03_main',
+   'EXECUTABLE')],)

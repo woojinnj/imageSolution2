@@ -1,0 +1,309 @@
+13-Jan-25 15:45:58 - DEBUG : test 안녕
+13-Jan-25 15:46:00 - DEBUG : test 안녕
+13-Jan-25 15:46:00 - DEBUG : test 안녕
+13-Jan-25 15:46:01 - DEBUG : test 안녕
+13-Jan-25 15:46:01 - DEBUG : test 안녕
+13-Jan-25 15:46:02 - DEBUG : test 안녕
+13-Jan-25 15:46:02 - DEBUG : test 안녕
+13-Jan-25 15:46:02 - DEBUG : test 안녕
+13-Jan-25 15:46:02 - DEBUG : test 안녕
+13-Jan-25 15:46:02 - DEBUG : test 안녕
+13-Jan-25 15:46:03 - DEBUG : test 안녕
+13-Jan-25 15:46:03 - DEBUG : test 안녕
+13-Jan-25 15:46:03 - DEBUG : test 안녕
+13-Jan-25 15:46:03 - DEBUG : test 안녕
+13-Jan-25 15:46:03 - DEBUG : test 안녕
+13-Jan-25 15:46:04 - DEBUG : test 안녕
+13-Jan-25 15:46:04 - DEBUG : test 안녕
+13-Jan-25 15:46:04 - DEBUG : test 안녕
+13-Jan-25 15:46:04 - DEBUG : test 안녕
+13-Jan-25 15:46:05 - DEBUG : test 안녕
+13-Jan-25 15:46:05 - DEBUG : test 안녕
+13-Jan-25 15:46:05 - DEBUG : test 안녕
+13-Jan-25 15:46:05 - DEBUG : test 안녕
+13-Jan-25 15:46:05 - DEBUG : test 안녕
+13-Jan-25 15:48:40 - DEBUG : test 안녕
+13-Jan-25 15:52:04 - INFO : Starting server...
+13-Jan-25 15:52:04 - ERROR : INFO:     Will watch for changes in these directories: ['/Users/woojin/Desktop/test/imageSolution']
+13-Jan-25 15:52:04 - ERROR : ERROR:    [Errno 48] Address already in use
+13-Jan-25 15:52:40 - INFO : Starting server...
+13-Jan-25 15:52:51 - INFO : INFO:     127.0.0.1:53980 - "GET /all HTTP/1.1" 404 Not Found
+13-Jan-25 15:52:54 - INFO : INFO:     127.0.0.1:53980 - "GET /all2 HTTP/1.1" 404 Not Found
+13-Jan-25 15:53:02 - INFO : 2025-01-13 15:53:02,852 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+13-Jan-25 15:53:02 - INFO : 2025-01-13 15:53:02,852 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 15:53:02 - INFO : 2025-01-13 15:53:02,854 INFO sqlalchemy.engine.Engine select current_schema()
+13-Jan-25 15:53:02 - INFO : 2025-01-13 15:53:02,855 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 15:53:02 - INFO : 2025-01-13 15:53:02,862 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+13-Jan-25 15:53:02 - INFO : 2025-01-13 15:53:02,862 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 15:53:02 - INFO : 2025-01-13 15:53:02,866 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+13-Jan-25 15:53:02 - INFO : 2025-01-13 15:53:02,869 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+13-Jan-25 15:53:02 - INFO : FROM compressed_images
+13-Jan-25 15:53:02 - INFO : 2025-01-13 15:53:02,869 INFO sqlalchemy.engine.Engine [generated in 0.00025s] {}
+13-Jan-25 15:53:02 - INFO : INFO:     127.0.0.1:53981 - "GET /image/all2 HTTP/1.1" 200 OK
+13-Jan-25 15:53:23 - INFO : 2025-01-13 15:53:23,229 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+13-Jan-25 15:53:23 - INFO : FROM compressed_images
+13-Jan-25 15:53:23 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+13-Jan-25 15:53:23 - INFO : LIMIT %(param_1)s::INTEGER
+13-Jan-25 15:53:23 - INFO : 2025-01-13 15:53:23,229 INFO sqlalchemy.engine.Engine [generated in 0.00020s] {'image_name_1': 'misosoup', 'param_1': 1}
+13-Jan-25 15:53:23 - INFO : INFO:     127.0.0.1:53982 - "GET /image/name/misosoup HTTP/1.1" 200 OK
+13-Jan-25 15:53:26 - INFO : 2025-01-13 15:53:26,839 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+13-Jan-25 15:53:26 - INFO : FROM compressed_images
+13-Jan-25 15:53:26 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+13-Jan-25 15:53:26 - INFO : LIMIT %(param_1)s::INTEGER
+13-Jan-25 15:53:26 - INFO : 2025-01-13 15:53:26,839 INFO sqlalchemy.engine.Engine [cached since 3.61s ago] {'image_name_1': 'sunset', 'param_1': 1}
+13-Jan-25 15:53:26 - INFO : INFO:     127.0.0.1:53982 - "GET /image/name/sunset HTTP/1.1" 200 OK
+13-Jan-25 15:53:53 - INFO : Starting server...
+13-Jan-25 15:53:53 - ERROR : INFO:     Will watch for changes in these directories: ['/Users/woojin/Desktop/test/imageSolution']
+13-Jan-25 15:53:53 - ERROR : ERROR:    [Errno 48] Address already in use
+13-Jan-25 15:53:57 - INFO : Stopping server...
+13-Jan-25 15:54:20 - INFO : Starting server...
+13-Jan-25 15:54:20 - ERROR : INFO:     Will watch for changes in these directories: ['/Users/woojin/Desktop/test/imageSolution']
+13-Jan-25 15:54:20 - ERROR : ERROR:    [Errno 48] Address already in use
+13-Jan-25 15:54:22 - INFO : Stopping server...
+13-Jan-25 15:55:54 - INFO : Starting server...
+13-Jan-25 15:55:54 - ERROR : INFO:     Will watch for changes in these directories: ['/Users/woojin/Desktop/test/imageSolution']
+13-Jan-25 15:55:54 - ERROR : ERROR:    [Errno 48] Address already in use
+13-Jan-25 15:55:59 - INFO : Stopping server...
+13-Jan-25 15:56:40 - INFO : Starting server...
+13-Jan-25 15:56:40 - ERROR : INFO:     Will watch for changes in these directories: ['/Users/woojin/Desktop/test/imageSolution']
+13-Jan-25 15:56:40 - ERROR : ERROR:    [Errno 48] Address already in use
+13-Jan-25 15:56:47 - INFO : Stopping server...
+13-Jan-25 15:58:07 - INFO : Starting server...
+13-Jan-25 15:58:07 - ERROR : INFO:     Will watch for changes in these directories: ['/Users/woojin/Desktop/test/imageSolution']
+13-Jan-25 15:58:07 - ERROR : ERROR:    [Errno 48] Address already in use
+13-Jan-25 15:58:08 - INFO : Stopping server...
+13-Jan-25 15:58:08 - ERROR : Error stopping process: [Errno 3] No such process
+13-Jan-25 16:00:00 - INFO : Starting server...
+13-Jan-25 16:00:02 - INFO : 2025-01-13 16:00:02,536 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+13-Jan-25 16:00:02 - INFO : 2025-01-13 16:00:02,536 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:00:02 - INFO : 2025-01-13 16:00:02,537 INFO sqlalchemy.engine.Engine select current_schema()
+13-Jan-25 16:00:02 - INFO : 2025-01-13 16:00:02,537 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:00:02 - INFO : 2025-01-13 16:00:02,537 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+13-Jan-25 16:00:02 - INFO : 2025-01-13 16:00:02,537 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:00:02 - INFO : 2025-01-13 16:00:02,539 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+13-Jan-25 16:00:02 - INFO : 2025-01-13 16:00:02,541 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+13-Jan-25 16:00:02 - INFO : FROM compressed_images
+13-Jan-25 16:00:02 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+13-Jan-25 16:00:02 - INFO : LIMIT %(param_1)s::INTEGER
+13-Jan-25 16:00:02 - INFO : 2025-01-13 16:00:02,541 INFO sqlalchemy.engine.Engine [generated in 0.00009s] {'image_name_1': 'anytimeanywhere', 'param_1': 1}
+13-Jan-25 16:00:02 - INFO : INFO:     127.0.0.1:54011 - "GET /image/name/anytimeanywhere HTTP/1.1" 200 OK
+13-Jan-25 16:00:04 - INFO : Stopping server...
+13-Jan-25 16:00:04 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+13-Jan-25 16:00:09 - INFO : Starting server...
+13-Jan-25 16:00:11 - INFO : 2025-01-13 16:00:11,302 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+13-Jan-25 16:00:11 - INFO : 2025-01-13 16:00:11,303 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:00:11 - INFO : 2025-01-13 16:00:11,304 INFO sqlalchemy.engine.Engine select current_schema()
+13-Jan-25 16:00:11 - INFO : 2025-01-13 16:00:11,304 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:00:11 - INFO : 2025-01-13 16:00:11,304 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+13-Jan-25 16:00:11 - INFO : 2025-01-13 16:00:11,304 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:00:11 - INFO : 2025-01-13 16:00:11,306 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+13-Jan-25 16:00:11 - INFO : 2025-01-13 16:00:11,308 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+13-Jan-25 16:00:11 - INFO : FROM compressed_images
+13-Jan-25 16:00:11 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+13-Jan-25 16:00:11 - INFO : LIMIT %(param_1)s::INTEGER
+13-Jan-25 16:00:11 - INFO : 2025-01-13 16:00:11,308 INFO sqlalchemy.engine.Engine [generated in 0.00008s] {'image_name_1': 'anytimeanywhere', 'param_1': 1}
+13-Jan-25 16:00:11 - INFO : INFO:     127.0.0.1:54018 - "GET /image/name/anytimeanywhere HTTP/1.1" 200 OK
+13-Jan-25 16:00:12 - INFO : Stopping server...
+13-Jan-25 16:00:12 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+13-Jan-25 16:05:32 - INFO : Starting server...
+13-Jan-25 16:05:38 - INFO : 2025-01-13 16:05:38,353 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+13-Jan-25 16:05:38 - INFO : 2025-01-13 16:05:38,353 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:05:38 - INFO : 2025-01-13 16:05:38,354 INFO sqlalchemy.engine.Engine select current_schema()
+13-Jan-25 16:05:38 - INFO : 2025-01-13 16:05:38,354 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:05:38 - INFO : 2025-01-13 16:05:38,354 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+13-Jan-25 16:05:38 - INFO : 2025-01-13 16:05:38,354 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:05:38 - INFO : 2025-01-13 16:05:38,356 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+13-Jan-25 16:05:38 - INFO : 2025-01-13 16:05:38,357 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+13-Jan-25 16:05:38 - INFO : FROM compressed_images
+13-Jan-25 16:05:38 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+13-Jan-25 16:05:38 - INFO : LIMIT %(param_1)s::INTEGER
+13-Jan-25 16:05:38 - INFO : 2025-01-13 16:05:38,357 INFO sqlalchemy.engine.Engine [generated in 0.00006s] {'image_name_1': 'anytimeanywhere', 'param_1': 1}
+13-Jan-25 16:05:38 - INFO : INFO:     127.0.0.1:54437 - "GET /image/name/anytimeanywhere HTTP/1.1" 200 OK
+13-Jan-25 16:05:45 - INFO : Stopping server...
+13-Jan-25 16:05:45 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+13-Jan-25 16:27:59 - INFO : Starting server...
+13-Jan-25 16:28:06 - INFO : 2025-01-13 16:28:06,008 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+13-Jan-25 16:28:06 - INFO : 2025-01-13 16:28:06,008 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:28:06 - INFO : 2025-01-13 16:28:06,009 INFO sqlalchemy.engine.Engine select current_schema()
+13-Jan-25 16:28:06 - INFO : 2025-01-13 16:28:06,009 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:28:06 - INFO : 2025-01-13 16:28:06,010 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+13-Jan-25 16:28:06 - INFO : 2025-01-13 16:28:06,010 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:28:06 - INFO : 2025-01-13 16:28:06,013 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+13-Jan-25 16:28:06 - INFO : 2025-01-13 16:28:06,014 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+13-Jan-25 16:28:06 - INFO : FROM compressed_images
+13-Jan-25 16:28:06 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+13-Jan-25 16:28:06 - INFO : LIMIT %(param_1)s::INTEGER
+13-Jan-25 16:28:06 - INFO : 2025-01-13 16:28:06,014 INFO sqlalchemy.engine.Engine [generated in 0.00011s] {'image_name_1': 'anytimeanywhere', 'param_1': 1}
+13-Jan-25 16:28:06 - INFO : INFO:     127.0.0.1:56119 - "GET /image/name/anytimeanywhere HTTP/1.1" 200 OK
+13-Jan-25 16:28:16 - INFO : 2025-01-13 16:28:16,643 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+13-Jan-25 16:28:16 - INFO : FROM compressed_images
+13-Jan-25 16:28:16 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+13-Jan-25 16:28:16 - INFO : LIMIT %(param_1)s::INTEGER
+13-Jan-25 16:28:16 - INFO : 2025-01-13 16:28:16,643 INFO sqlalchemy.engine.Engine [cached since 10.63s ago] {'image_name_1': 'sunset', 'param_1': 1}
+13-Jan-25 16:28:16 - INFO : INFO:     127.0.0.1:56120 - "GET /image/name/sunset HTTP/1.1" 200 OK
+13-Jan-25 16:28:20 - INFO : Stopping server...
+13-Jan-25 16:28:20 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+13-Jan-25 16:38:10 - DEBUG : test 안녕
+13-Jan-25 16:38:11 - DEBUG : test 안녕
+13-Jan-25 16:38:11 - DEBUG : test 안녕
+13-Jan-25 16:38:12 - DEBUG : test 안녕
+13-Jan-25 16:38:13 - DEBUG : test 안녕
+13-Jan-25 16:38:13 - DEBUG : test 안녕
+13-Jan-25 16:39:24 - INFO : Starting server...
+13-Jan-25 16:39:28 - INFO : 2025-01-13 16:39:28,126 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+13-Jan-25 16:39:28 - INFO : 2025-01-13 16:39:28,126 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:39:28 - INFO : 2025-01-13 16:39:28,127 INFO sqlalchemy.engine.Engine select current_schema()
+13-Jan-25 16:39:28 - INFO : 2025-01-13 16:39:28,127 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:39:28 - INFO : 2025-01-13 16:39:28,128 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+13-Jan-25 16:39:28 - INFO : 2025-01-13 16:39:28,128 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:39:28 - INFO : 2025-01-13 16:39:28,130 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+13-Jan-25 16:39:28 - INFO : 2025-01-13 16:39:28,131 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+13-Jan-25 16:39:28 - INFO : FROM compressed_images
+13-Jan-25 16:39:28 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+13-Jan-25 16:39:28 - INFO : LIMIT %(param_1)s::INTEGER
+13-Jan-25 16:39:28 - INFO : 2025-01-13 16:39:28,131 INFO sqlalchemy.engine.Engine [generated in 0.00008s] {'image_name_1': 'sunset', 'param_1': 1}
+13-Jan-25 16:39:28 - INFO : INFO:     127.0.0.1:57031 - "GET /image/name/sunset HTTP/1.1" 200 OK
+13-Jan-25 16:39:29 - INFO : Stopping server...
+13-Jan-25 16:39:29 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+13-Jan-25 16:39:45 - INFO : Starting server...
+13-Jan-25 16:39:46 - INFO : 2025-01-13 16:39:46,908 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+13-Jan-25 16:39:46 - INFO : 2025-01-13 16:39:46,908 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:39:46 - INFO : 2025-01-13 16:39:46,909 INFO sqlalchemy.engine.Engine select current_schema()
+13-Jan-25 16:39:46 - INFO : 2025-01-13 16:39:46,909 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:39:46 - INFO : 2025-01-13 16:39:46,910 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+13-Jan-25 16:39:46 - INFO : 2025-01-13 16:39:46,910 INFO sqlalchemy.engine.Engine [raw sql] {}
+13-Jan-25 16:39:46 - INFO : 2025-01-13 16:39:46,912 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+13-Jan-25 16:39:46 - INFO : 2025-01-13 16:39:46,914 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+13-Jan-25 16:39:46 - INFO : FROM compressed_images
+13-Jan-25 16:39:46 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+13-Jan-25 16:39:46 - INFO : LIMIT %(param_1)s::INTEGER
+13-Jan-25 16:39:46 - INFO : 2025-01-13 16:39:46,914 INFO sqlalchemy.engine.Engine [generated in 0.00011s] {'image_name_1': 'sunset', 'param_1': 1}
+13-Jan-25 16:39:46 - INFO : INFO:     127.0.0.1:57041 - "GET /image/name/sunset HTTP/1.1" 200 OK
+13-Jan-25 16:39:58 - INFO : Stopping server...
+13-Jan-25 16:39:58 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+25-Jan-13 16:42:27 - INFO : Starting server...
+25-Jan-13 16:42:33 - INFO : 2025-01-13 16:42:33,510 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+25-Jan-13 16:42:33 - INFO : 2025-01-13 16:42:33,510 INFO sqlalchemy.engine.Engine [raw sql] {}
+25-Jan-13 16:42:33 - INFO : 2025-01-13 16:42:33,512 INFO sqlalchemy.engine.Engine select current_schema()
+25-Jan-13 16:42:33 - INFO : 2025-01-13 16:42:33,512 INFO sqlalchemy.engine.Engine [raw sql] {}
+25-Jan-13 16:42:33 - INFO : 2025-01-13 16:42:33,512 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+25-Jan-13 16:42:33 - INFO : 2025-01-13 16:42:33,512 INFO sqlalchemy.engine.Engine [raw sql] {}
+25-Jan-13 16:42:33 - INFO : 2025-01-13 16:42:33,514 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+25-Jan-13 16:42:33 - INFO : 2025-01-13 16:42:33,515 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+25-Jan-13 16:42:33 - INFO : FROM compressed_images
+25-Jan-13 16:42:33 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+25-Jan-13 16:42:33 - INFO : LIMIT %(param_1)s::INTEGER
+25-Jan-13 16:42:33 - INFO : 2025-01-13 16:42:33,515 INFO sqlalchemy.engine.Engine [generated in 0.00010s] {'image_name_1': 'sunset', 'param_1': 1}
+25-Jan-13 16:42:33 - INFO : INFO:     127.0.0.1:57055 - "GET /image/name/sunset HTTP/1.1" 200 OK
+25-Jan-13 16:42:45 - INFO : 2025-01-13 16:42:45,336 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+25-Jan-13 16:42:45 - INFO : FROM compressed_images
+25-Jan-13 16:42:45 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+25-Jan-13 16:42:45 - INFO : LIMIT %(param_1)s::INTEGER
+25-Jan-13 16:42:45 - INFO : 2025-01-13 16:42:45,336 INFO sqlalchemy.engine.Engine [cached since 11.82s ago] {'image_name_1': 'sunset', 'param_1': 1}
+25-Jan-13 16:42:45 - INFO : INFO:     127.0.0.1:57056 - "GET /image/name/sunset HTTP/1.1" 200 OK
+25-Jan-13 16:42:46 - INFO : Stopping server...
+25-Jan-13 16:42:46 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+25-Jan-13 16:44:53 - INFO : Starting server...
+25-Jan-13 16:44:57 - INFO : 2025-01-13 16:44:57,852 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+25-Jan-13 16:44:57 - INFO : 2025-01-13 16:44:57,852 INFO sqlalchemy.engine.Engine [raw sql] {}
+25-Jan-13 16:44:57 - INFO : 2025-01-13 16:44:57,854 INFO sqlalchemy.engine.Engine select current_schema()
+25-Jan-13 16:44:57 - INFO : 2025-01-13 16:44:57,854 INFO sqlalchemy.engine.Engine [raw sql] {}
+25-Jan-13 16:44:57 - INFO : 2025-01-13 16:44:57,854 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+25-Jan-13 16:44:57 - INFO : 2025-01-13 16:44:57,854 INFO sqlalchemy.engine.Engine [raw sql] {}
+25-Jan-13 16:44:57 - INFO : 2025-01-13 16:44:57,856 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+25-Jan-13 16:44:57 - INFO : 2025-01-13 16:44:57,858 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+25-Jan-13 16:44:57 - INFO : FROM compressed_images
+25-Jan-13 16:44:57 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+25-Jan-13 16:44:57 - INFO : LIMIT %(param_1)s::INTEGER
+25-Jan-13 16:44:57 - INFO : 2025-01-13 16:44:57,858 INFO sqlalchemy.engine.Engine [generated in 0.00008s] {'image_name_1': 'sunset', 'param_1': 1}
+25-Jan-13 16:44:57 - INFO : INFO:     127.0.0.1:57365 - "GET /image/name/sunset HTTP/1.1" 200 OK
+25-Jan-13 16:45:02 - INFO : Stopping server...
+25-Jan-13 16:45:02 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+2025-01-13 16:46:29 - INFO : Starting server...
+2025-01-13 16:46:32 - INFO : Stopping server...
+2025-01-13 16:46:32 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+2025-01-13 16:47:18 - INFO : Starting server...
+2025-01-13 16:47:23 - INFO : Stopping server...
+2025-01-13 16:47:23 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+ 2025-01-13 16:47:39 - INFO : Starting server...
+ 2025-01-13 16:47:43 - INFO : Stopping server...
+ 2025-01-13 16:47:43 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+ 2025-01-13 16:48:31 - INFO : Starting server...
+ 2025-01-13 16:48:35 - INFO : Stopping server...
+ 2025-01-13 16:48:35 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+ 2025-01-13 16:50:09 - INFO : Starting server...
+ 2025-01-13 16:50:13 - INFO : 2025-01-13 16:50:13,361 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+ 2025-01-13 16:50:13 - INFO : 2025-01-13 16:50:13,361 INFO sqlalchemy.engine.Engine [raw sql] {}
+ 2025-01-13 16:50:13 - INFO : 2025-01-13 16:50:13,362 INFO sqlalchemy.engine.Engine select current_schema()
+ 2025-01-13 16:50:13 - INFO : 2025-01-13 16:50:13,362 INFO sqlalchemy.engine.Engine [raw sql] {}
+ 2025-01-13 16:50:13 - INFO : 2025-01-13 16:50:13,362 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+ 2025-01-13 16:50:13 - INFO : 2025-01-13 16:50:13,362 INFO sqlalchemy.engine.Engine [raw sql] {}
+ 2025-01-13 16:50:13 - INFO : 2025-01-13 16:50:13,365 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+ 2025-01-13 16:50:13 - INFO : 2025-01-13 16:50:13,366 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+ 2025-01-13 16:50:13 - INFO : FROM compressed_images
+ 2025-01-13 16:50:13 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+ 2025-01-13 16:50:13 - INFO : LIMIT %(param_1)s::INTEGER
+ 2025-01-13 16:50:13 - INFO : 2025-01-13 16:50:13,366 INFO sqlalchemy.engine.Engine [generated in 0.00007s] {'image_name_1': 'sunset', 'param_1': 1}
+ 2025-01-13 16:50:13 - INFO : INFO:     127.0.0.1:57390 - "GET /image/name/sunset HTTP/1.1" 200 OK
+ 2025-01-13 16:50:16 - INFO : 2025-01-13 16:50:16,114 INFO sqlalchemy.engine.Engine SELECT compressed_images.id AS compressed_images_id, compressed_images.image_name AS compressed_images_image_name, compressed_images.compressed_data AS compressed_images_compressed_data
+ 2025-01-13 16:50:16 - INFO : FROM compressed_images
+ 2025-01-13 16:50:16 - INFO : WHERE compressed_images.image_name = %(image_name_1)s::VARCHAR
+ 2025-01-13 16:50:16 - INFO : LIMIT %(param_1)s::INTEGER
+ 2025-01-13 16:50:16 - INFO : 2025-01-13 16:50:16,114 INFO sqlalchemy.engine.Engine [cached since 2.748s ago] {'image_name_1': 'sunset', 'param_1': 1}
+ 2025-01-13 16:50:16 - INFO : INFO:     127.0.0.1:57390 - "GET /image/name/sunset HTTP/1.1" 200 OK
+ 2025-01-13 16:50:21 - INFO : Stopping server...
+ 2025-01-13 16:50:21 - ERROR : Error: 'NoneType' object has no attribute 'stderr'
+15-Jan-25 14:13:58 - DEBUG : test 안녕
+15-Jan-25 14:13:59 - DEBUG : test 안녕
+15-Jan-25 14:13:59 - DEBUG : test 안녕
+15-Jan-25 14:13:59 - DEBUG : test 안녕
+15-Jan-25 14:13:59 - DEBUG : test 안녕
+15-Jan-25 14:14:01 - DEBUG : test 안녕
+15-Jan-25 14:14:01 - DEBUG : test 안녕
+15-Jan-25 14:14:01 - DEBUG : test 안녕
+15-Jan-25 14:14:07 - DEBUG : test 안녕
+15-Jan-25 14:14:08 - DEBUG : test 안녕
+15-Jan-25 14:14:08 - DEBUG : test 안녕
+15-Jan-25 14:14:08 - DEBUG : test 안녕
+15-Jan-25 14:14:08 - DEBUG : test 안녕
+15-Jan-25 14:14:08 - DEBUG : test 안녕
+15-Jan-25 14:14:08 - DEBUG : test 안녕
+15-Jan-25 14:14:09 - DEBUG : test 안녕
+15-Jan-25 14:14:09 - DEBUG : test 안녕
+15-Jan-25 14:14:09 - DEBUG : test 안녕
+15-Jan-25 14:14:09 - DEBUG : test 안녕
+15-Jan-25 14:14:09 - DEBUG : test 안녕
+15-Jan-25 14:14:10 - DEBUG : test 안녕
+15-Jan-25 14:14:10 - DEBUG : test 안녕
+15-Jan-25 14:14:10 - DEBUG : test 안녕
+15-Jan-25 14:14:10 - DEBUG : test 안녕
+15-Jan-25 14:14:10 - DEBUG : test 안녕
+15-Jan-25 14:14:10 - DEBUG : test 안녕
+15-Jan-25 14:14:10 - DEBUG : test 안녕
+15-Jan-25 14:14:11 - DEBUG : test 안녕
+15-Jan-25 14:14:11 - DEBUG : test 안녕
+15-Jan-25 14:14:11 - DEBUG : test 안녕
+15-Jan-25 14:14:11 - DEBUG : test 안녕
+15-Jan-25 14:14:11 - DEBUG : test 안녕
+15-Jan-25 14:14:12 - DEBUG : test 안녕
+15-Jan-25 14:17:10 - INFO : FastAPI 서버를 시작합니다.
+15-Jan-25 14:17:10 - DEBUG : Using selector: KqueueSelector
+15-Jan-25 14:17:32 - INFO : FastAPI 서버를 중지합니다.
+15-Jan-25 14:18:44 - INFO : FastAPI 서버를 시작합니다.
+15-Jan-25 14:18:44 - DEBUG : Using selector: KqueueSelector
+15-Jan-25 14:18:54 - INFO : FastAPI 서버를 시작합니다.
+15-Jan-25 14:18:54 - DEBUG : Using selector: KqueueSelector
+15-Jan-25 14:21:22 - DEBUG : test 안녕
+15-Jan-25 14:21:22 - DEBUG : test 안녕
+15-Jan-25 14:21:22 - DEBUG : test 안녕
+15-Jan-25 14:21:22 - DEBUG : test 안녕
+15-Jan-25 14:21:22 - DEBUG : test 안녕
+15-Jan-25 14:23:15 - INFO : FastAPI 서버를 시작합니다.
+15-Jan-25 14:23:15 - DEBUG : Using selector: KqueueSelector
+15-Jan-25 14:23:47 - INFO : FastAPI 서버를 시작합니다.
+15-Jan-25 14:23:47 - DEBUG : Using selector: KqueueSelector
+15-Jan-25 14:25:29 - DEBUG : test 안녕
+15-Jan-25 14:25:31 - DEBUG : test 안녕
+15-Jan-25 14:25:31 - DEBUG : test 안녕
+15-Jan-25 14:25:31 - DEBUG : test 안녕
+15-Jan-25 14:25:32 - DEBUG : test 안녕
