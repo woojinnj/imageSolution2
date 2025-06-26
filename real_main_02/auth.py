@@ -7,8 +7,8 @@ from passlib.hash import bcrypt
 import jwt
 from sqlalchemy import text
 from sqlalchemy.orm import Session
-from db_info04 import SessionAuth
-from db_info04 import get_auth_db_url
+from real_main_02.db_info04 import SessionAuth
+from real_main_02.db_info04 import get_auth_db_url
 
 SECRET = os.getenv("JWT_SECRET", "supersecret") #보안 위해 환경변수 사용,없으면 supersecret사용
 router = APIRouter(prefix="/auth", tags=["auth"]) # 인증 관련 api만 따로 쓰는 라우터 객체를 만드는 코드. prefix="/auth" 자동으로 붙는거임. tags는 자동 생성되는 swagger 문서에서 이 그룹을 auth 탭으로 묶어 보여줌
@@ -25,7 +25,7 @@ class PasswordResetIn(BaseModel):
 
 # DB 세션 획득
 def get_db() -> Session: #get_db() 함수가 Session 타입을 반환한다는 뜻.
-    from db_info04 import SessionAuth  # <- 이 줄을 함수 안에 넣자! ★★★
+    from real_main_02.db_info04 import SessionAuth  # <- 이 줄을 함수 안에 넣자! ★★★
     if SessionAuth is None: #SessionAuth는 DB연결을 해주는 객체
         raise HTTPException(500, "AUTH DB 세션이 초기화되지 않았습니다.")
     db = SessionAuth()

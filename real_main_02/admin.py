@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 from passlib.hash import bcrypt
-from db_info04 import update_auth_engine
+from real_main_02.db_info04 import update_auth_engine
 from fastapi import Query
 
 router = APIRouter(prefix="/admin", tags=["admin"])
@@ -12,7 +12,7 @@ update_auth_engine()
 DEFAULT_PASSWORD = "0000"
 
 def get_db():
-    from db_info04 import SessionAuth
+    from real_main_02.db_info04 import SessionAuth
     if SessionAuth is None:
         raise HTTPException(500, "AUTH DB 세션이 초기화되지 않았습니다.")
     db = SessionAuth()
