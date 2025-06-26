@@ -29,7 +29,7 @@ fastapi_app = FastAPI()
 # CORS 설정
 fastapi_app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # "*" 대신 프론트 실제 주소
+    allow_origins=["https://image-solution2-frontend.onrender.com"], #수정
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
