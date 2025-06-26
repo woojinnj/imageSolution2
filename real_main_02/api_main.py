@@ -10,7 +10,19 @@ from typing import Any, Dict, List, Optional
 
 import httpx
 from fastapi import FastAPI, Depends, HTTPException
+
 from fastapi.middleware.cors import CORSMiddleware
+fastapi_app = FastAPI()
+
+# CORS 설정
+fastapi_app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], #수정
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from sqlalchemy import create_engine, MetaData, Table, text
@@ -24,16 +36,6 @@ from real_main_02.admin import router as admin_router
 from real_main_02.dbconnection import router as dbconnection_router
 
 
-fastapi_app = FastAPI()
-
-# CORS 설정
-fastapi_app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"], #수정
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 update_auth_engine()
 
