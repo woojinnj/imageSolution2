@@ -15,7 +15,7 @@ export default function LoginPage() {
     const router = useRouter();
 
     const handleLogin = async () => { //비동기
-        const res = await fetch("http://localhost:8000/auth/login", {
+        const res = await fetch("https://imagesolution2.onrender.com/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

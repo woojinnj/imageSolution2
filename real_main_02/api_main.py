@@ -43,10 +43,10 @@ fastapi_app.include_router(admin_router)
 fastapi_app.include_router(dbconnection_router)
 
 def graceful_exit(*args):
-    if db_info04.engine:
+    if getattr(db_info04, "engine", None):
         db_info04.engine.dispose()
         logging.info("CORE DB 엔진 종료")
-    if db_info04.portal_engine:
+    if getattr(db_info04, "portal_engine", None):
         db_info04.portal_engine.dispose()
         logging.info("PORTAL DB 엔진 종료")
     sys.exit(0)
