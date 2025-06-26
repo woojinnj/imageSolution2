@@ -127,6 +127,7 @@ def update_auth_engine():
     )
     SessionAuth = sessionmaker(bind=engine_auth)
     print("AUTH_DB 엔진 업데이트 완료")
-
+def get_auth_db_url():
+    return AUTH_DATABASE_URL
 #-------------------------------------------------------------------------------------------
 
