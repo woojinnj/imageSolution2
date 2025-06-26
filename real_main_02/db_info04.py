@@ -3,16 +3,15 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from fastapi import FastAPI, HTTPException, Depends
 from sqlalchemy.pool import NullPool
-
+import os
 
 # PostgreSQL 연결 정보
 db_info_core = {
-    "username": "aims",
-    "password": "aims",
-    "database": "AIMS_CORE_DB",
-    "host": "",
-    "port": "",
-
+    "username": os.getenv("CORE_DB_USER", "aims"),
+    "password": os.getenv("CORE_DB_PASSWORD", "aims"),
+    "database": os.getenv("CORE_DB_NAME", "AIMS_CORE_DB"),
+    "host": os.getenv("CORE_DB_HOST", ""),
+    "port": os.getenv("CORE_DB_PORT", ""),
 }
 
 def get_core_db_url():
@@ -56,11 +55,11 @@ def update_engine():
         print("CORE DB 업데이트 실패:", e)
 
 db_info_portal = {
-    "username": "aims",
-    "password": "aims",
-    "database": "AIMS_PORTAL_DB",
-    "host": "",
-    "port": "",
+    "username": os.getenv("PORTAL_DB_USER", "aims"),
+    "password": os.getenv("PORTAL_DB_PASSWORD", "aims"),
+    "database": os.getenv("PORTAL_DB_NAME", "AIMS_PORTAL_DB"),
+    "host": os.getenv("PORTAL_DB_HOST", ""),
+    "port": os.getenv("PORTAL_DB_PORT", ""),
 }
 
 def get_portal_db_url():
@@ -101,18 +100,14 @@ def update_portal_engine():
 
 #--------------------------------------------------------------------------------------
 db_info_auth = {
-    "username": "postgres",      # ← 실제 로그인 계정
-    "password": "0000",          # ← 비밀번호
-    "database": "testdb01",      # ← 방금 만든 DB 이름
-    "host": "localhost",
-    "port": "5432",
+    "username": os.getenv("AUTH_DB_USER", "postgres"),
+    "password": os.getenv("AUTH_DB_PASSWORD", "0000"),
+    "database": os.getenv("AUTH_DB_NAME", "testdb01"),
+    "host": os.getenv("AUTH_DB_HOST", "localhost"),
+    "port": os.getenv("AUTH_DB_PORT", "5432"),
 }
-
 def get_auth_db_url():
-    info = db_info_auth
-    return f"postgresql+psycopg://{info['username']}:{info['password']}@" \
-           f"{info['host']}:{info['port']}/{info['database']}"
-
+    return f"postgresql+psycopg://{db_info_auth['username']}:{db_info_auth['password']}@{db_info_auth['host']}:{db_info_auth['port']}/{db_info_auth['database']}"
 engine_auth = None
 SessionAuth = None
 
